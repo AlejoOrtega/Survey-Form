@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1 id="title"> Survey Form </h1>
+<p id="description"> <b>This is a survey form to ask some question questions</b> </p>
+  
+  <form id="survey-form">
+    <label for="name" id="name-label"> <b> Name </b></label>
+    <input id="name" type="text" name="name" placeholder="Ur name" required></input>
+    <br>
+    
+<label for="email" id="email-label"><b> Email </b></label>
+    <input id="email" type="email" name="email" placeholder="Ur email" required></input>
+    <br>
+
+<label for="number" id="number-label"><b> Age </b></label>
+    <input id="number" type="number" name="number" min="18" max="100" placeholder="Ur Age" required></input>
+    <br>
+
+<label for="dropdown" id="model"> <b>Select the best option</b> </label>
+    <select id="dropdown">
+      <option value="Number_1"> Number 1</option>
+      <option value="Number_2"> Number 2</option>
+      <option value="Number_3"> Number 3</option>
+    </select>
+    <br>
+    <br>
+    <label for="color" id="color"> <b>Colors: <b></label>
+      <br>
+      <input id="color" type="radio" id="black" name="color" value="black">
+      <label for="color"> Black </label>
+      <br>
+
+      <input id="color" type="radio" id="white" name="color" value="white">
+      <label for="color"> White </label>
+      <br>
+      <br>
+  
+      <label for="features"> <b>Add features: </b></label>
+      <br>
+      <input id="checkbox" type="checkbox" name="features" value="autocolor">
+      <label for="checkbox"> AutoColor </label>
+      <br>
+      <input id="checkbox" type="checkbox" name="features" value="manualcolor">
+      <label for="checkbox"> ManualColor </label>
+      <br>
+      <input id="checkbox" type="checkbox" name="features" value="semicolor">
+      <label for="checkbox"> SemiColor </label>
+      <br>
+      <br>
+      
+      <label id="textarea"> Additional Comments </label>
+      <br>
+      <textarea id="textarea" name="instructions" rows="5" cols="40">
+        
+        
+      </textarea>
+      <br>
+      
+      <input id="submit" type="submit" value="Place Order" class="submit-button">
+  </form>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
